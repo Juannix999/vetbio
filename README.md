@@ -70,10 +70,10 @@ Los tests incluyen validaciones clave (fecha de nacimiento no futura) y el cálc
 
 ## Seguridad y limpieza del repositorio
 - He añadido `.gitignore` para evitar subir `db.sqlite3` en adelante.
-- Si quieres eliminar `db.sqlite3` del historial del repositorio (recomendado para no compartir datos/binarios en commits anteriores), sigue la sección "Eliminar db.sqlite3 del historial" más abajo.
+- Si quieres eliminar `db.sqlite3` del historial del repositorio (recomendado para no compartir datos/binarios en commits anteriores), sigue la sección "Eliminar db.sqlite3 del historial" más ab[...] 
 
 ## Cómo eliminar db.sqlite3 del historial (pasos seguros, locales)
-IMPORTANTE: Esto reescribe el historial Git y requiere forzar push al remoto. Todos los colaboradores deberán volver a clonar o sincronizar después. Haz una copia de seguridad antes de continuar.
+IMPORTANTE: Esto reescribe el historial Git y requiere forzar push al remoto. Todos los colaboradores deberán volver a clonar o sincronizar después. Haz una copia de seguridad antes de continuar[...]
 
 Opción recomendada: git-filter-repo (más rápido y moderno)
 
@@ -125,14 +125,10 @@ Consecuencias y recomendaciones:
 - Asegúrate de avisar y coordinar con cualquier otra persona que tenga acceso al repositorio.
 - Después de limpiar el historial, haz una release o crea una etiqueta para marcar el punto de referencia limpio.
 
-Si quieres, yo te guío paso a paso y puedo generar los comandos exactos para tu entorno o crear un script bash que haga las operaciones (tú deberás ejecutarlo localmente porque requiere credenciales y un push forzado).
+Si quieres, yo te guío paso a paso y puedo generar los comandos exactos para tu entorno o crear un script bash que haga las operaciones (tú deberás ejecutarlo localmente porque requiere creden[...]
 
 ## Siguientes pasos recomendados (para portfolio)
 - Añadir CI (GitHub Actions) que ejecute tests en cada push.
 - Añadir Dockerfile / docker-compose para demo reproducible.
 - Fijar versiones en `requirements.txt` (p. ej. `pip freeze > requirements.txt`).
 - Actualizar README con screenshots o response samples de la API para que reclutadores vean resultados sin ejecutar nada.
-
----
-
-Si quieres que actualice el README con tus datos personales (nombre, contacto, link a demo o captura) dilo y lo incluyo. También puedo preparar el script para eliminar `db.sqlite3` del historial y darte las indicaciones exactas para ejecutarlo localmente (lo ejecuto desde tu máquina si me das permiso para que lo haga por ti; de lo contrario te doy los pasos).
